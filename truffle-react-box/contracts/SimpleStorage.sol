@@ -10,4 +10,8 @@ contract SimpleStorage {
   function get() public view returns (uint) {
     return storedData;
   }
+
+  function getBalance() external view returns(uint) {
+    return msg.sender.balance;
+  }
 }
