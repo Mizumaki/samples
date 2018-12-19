@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+# memo
+memo.md
+
 # misc
 .DS_Store
 .env.local
