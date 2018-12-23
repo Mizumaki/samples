@@ -12,9 +12,6 @@ import { mapState } from "vuex";
 
 export default {
   name: "MapState2",
-  props: {
-    localCount: Number
-  },
   computed: {
     ...mapState({
       count1: state => state.count,

@@ -5,8 +5,9 @@
     <p>count1 is <span>{{ count1 }}</span></p> <!-- computed で count1 を定義しているため、これは表示される -->
     <button v-on:click="click1">this.count</button> <!-- これは undefined -->
     <button v-on:click="click2">this.count1</button>
-    <MapState1 localCount=100 />
-    <MapState2 localCount=200 />
+    <!-- ここで v-bind を使っている理由は http://bit.ly/2ReGN0f を参照 -->
+    <MapState1 :localCount="100" />
+    <MapState2 />
   </div>
 </template>
 
