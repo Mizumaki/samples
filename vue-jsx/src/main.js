@@ -1,12 +1,19 @@
 import Vue from 'vue'
-import App from './App.js'
+import App from './App.jsx'
 import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
 
 new Vue({
-  //router,
+  router,
   store,
-  render: h => h(App)
+  render: function (h) {
+    return (
+      <div>
+        <p>fuck</p>
+        <App propMessage="mother fucker" />
+      </div>
+    )
+  }
 }).$mount('#app')
